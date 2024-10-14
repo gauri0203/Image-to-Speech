@@ -30,7 +30,7 @@ Execution is divided into 3 parts:
 
 - Before using the app, the user should have personal tokens for Hugging Face
 - The user should save the personal tokens in an ".env" file within the package as string objects under object names: HUGGINGFACE_TOKEN 
-- The user should also have Ollama installed and need to pull llama2 model by command 'ollama pull llama2-7B'
+- The user should also have Ollama installed and need to pull llama2 model by command 'ollama pull llama2:7b'
 - The user can then run the app using the command: streamlit run app.py
 - Once the app is running on streamlit, the user can upload the target image
 - Execution will start automatically and it may take a few minutes to complete
@@ -51,13 +51,17 @@ Install the required Python packages:
 
 `pip install -r requirements.txt`
 
-Set up your OpenAI API key & Hugging Face Token by creating a .env file in the root directory of the project with the following contents:
+Pull the model from Ollama:
+
+`ollama pull llama2:7b`
+
+Set up your Hugging Face Token by creating a .env file in the root directory of the project with the following contents:
 
 `HUGGINGFACE_API_TOKEN=<<your-access-token-here>`
 
 Run the Streamlit app:
 
-`streamlit run app.py`
+`streamlit run app1.py`
 
 
 
